@@ -1,0 +1,41 @@
+{
+  "openapi": "3.0",
+  "info": {
+    "title": "Subclass with array NSwag",
+    "version": "1.0"
+  },
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Entity": {
+        "type": "object",
+        "properties": {
+          "list": {
+            "type": "array",
+            "items": {
+              "type": "number",
+              "format": "int64"
+            }
+          }
+        }
+      },
+      "SubClass": {
+        "type": "object",
+        "properties": {
+          "array": {
+            "type": "array",
+            "items": {
+              "type": "number",
+              "format": "int64"
+            }
+          }
+        },
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/Entity"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "$schema": "../ng-openapi-gen-schema.json",
+  "input": "subclass-with-array-nswag.json",
+  "output": "out/subclass-with-array-nswag",
+  "ignoreUnusedModels": false
+}
